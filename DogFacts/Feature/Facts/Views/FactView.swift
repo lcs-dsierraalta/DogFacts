@@ -16,7 +16,6 @@ struct FactView: View {
                spacing: 8) {
             
             Text(makeAttributedString(label: item.fact))
-            
         }
                .padding()
                .foregroundColor(.black)

@@ -12,13 +12,10 @@ struct FactsScreen: View {
     var body: some View {
         List {
             ForEach(Fact.dummyData, id: \.fact) { item in
-
+                FactView(item: item)
             }
         }
     }
-    
-    
-
 }
 
 struct FactsScreen_Previews: PreviewProvider {
