@@ -11,6 +11,7 @@
 		3981FDFC2717C8280012F638 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981FDFB2717C8280012F638 /* ContentView.swift */; };
 		3981FDFE2717C8320012F638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3981FDFD2717C8320012F638 /* Assets.xcassets */; };
 		3981FE012717C8320012F638 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3981FE002717C8320012F638 /* Preview Assets.xcassets */; };
+		3981FE092717D16C0012F638 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981FE082717D16C0012F638 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3981FDFB2717C8280012F638 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3981FDFD2717C8320012F638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3981FE002717C8320012F638 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3981FE082717D16C0012F638 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		3981FDF82717C8280012F638 /* DogFacts */ = {
 			isa = PBXGroup;
 			children = (
+				3981FE072717D0630012F638 /* Constants */,
 				3981FDF92717C8280012F638 /* DogFactsApp.swift */,
 				3981FDFB2717C8280012F638 /* ContentView.swift */,
 				3981FDFD2717C8320012F638 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				3981FE002717C8320012F638 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3981FE072717D0630012F638 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3981FE082717D16C0012F638 /* APIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				3981FDFC2717C8280012F638 /* ContentView.swift in Sources */,
 				3981FDFA2717C8280012F638 /* DogFactsApp.swift in Sources */,
+				3981FE092717D16C0012F638 /* APIConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
