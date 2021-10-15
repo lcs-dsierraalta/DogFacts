@@ -12,13 +12,22 @@ struct FactsScreen: View {
     @StateObject private var viewModel = FactsViewModelImpl(service: FactsServiceImpl())
     
     var body: some View {
-        List {
-            ForEach(viewModel.facts, id: \.fact) { item in
-                FactView(item: item)
+        
+        VStack {
+            
+            Text("Dog Facts 🐶")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding()
+            
+            List {
+                ForEach(viewModel.facts, id: \.fact) { item in
+                    FactView(item: item)
+                }
             }
-        }
-        .task {
-            await viewModel.getRandomFact()
+            .task {
+                await viewModel.getRandomFact()
+            }
         }
     }
 }
