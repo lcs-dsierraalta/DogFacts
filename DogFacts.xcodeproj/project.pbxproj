@@ -16,6 +16,7 @@
 		3981FE122717D6900012F638 /* FactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981FE112717D6900012F638 /* FactsScreen.swift */; };
 		3981FE1527186A040012F638 /* FactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981FE1427186A030012F638 /* FactView.swift */; };
 		3981FE1827186DCF0012F638 /* FactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981FE1727186DCF0012F638 /* FactsService.swift */; };
+		3981FE1B271908380012F638 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3981FE1A271908370012F638 /* FactsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3981FE112717D6900012F638 /* FactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsScreen.swift; sourceTree = "<group>"; };
 		3981FE1427186A030012F638 /* FactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactView.swift; sourceTree = "<group>"; };
 		3981FE1727186DCF0012F638 /* FactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsService.swift; sourceTree = "<group>"; };
+		3981FE1A271908370012F638 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		3981FE0B2717D3E30012F638 /* Facts */ = {
 			isa = PBXGroup;
 			children = (
+				3981FE19271908060012F638 /* ViewModel */,
 				3981FE1627186D740012F638 /* Service */,
 				3981FE13271869B90012F638 /* Views */,
 				3981FE102717D6730012F638 /* Screen */,
@@ -136,6 +139,14 @@
 				3981FE1727186DCF0012F638 /* FactsService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		3981FE19271908060012F638 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3981FE1A271908370012F638 /* FactsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				3981FE122717D6900012F638 /* FactsScreen.swift in Sources */,
 				3981FE1827186DCF0012F638 /* FactsService.swift in Sources */,
 				3981FDFC2717C8280012F638 /* ContentView.swift in Sources */,
+				3981FE1B271908380012F638 /* FactsViewModel.swift in Sources */,
 				3981FDFA2717C8280012F638 /* DogFactsApp.swift in Sources */,
 				3981FE092717D16C0012F638 /* APIConstants.swift in Sources */,
 				3981FE0F2717D4190012F638 /* Fact.swift in Sources */,

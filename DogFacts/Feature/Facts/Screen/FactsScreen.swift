@@ -9,11 +9,16 @@ import SwiftUI
 
 struct FactsScreen: View {
     
+    @StateObject private var viewModel = FactsViewModelImpl(service: FactsServiceImpl())
+    
     var body: some View {
         List {
-            ForEach(Fact.dummyData, id: \.fact) { item in
+            ForEach(viewModel.facts, id: \.fact) { item in
                 FactView(item: item)
             }
+        }
+        .task {
+            await viewModel.getRandomFact()
         }
     }
 }

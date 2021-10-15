@@ -8,13 +8,13 @@
 import Foundation
 
 protocol FactsService {
-    func fetch() async throws -> [Fact]
+    func fetchRandomFacts() async throws -> [Fact]
 }
 
 final class FactsServiceImpl: FactsService {
-    func fetch() async throws -> [Fact] {
+    func fetchRandomFacts() async throws -> [Fact] {
         let urlSession = URLSession.shared
-        let url = URL(string: APIConstants.baseUrl.appending("/api/facts"))
+        let url = URL(string: APIConstants.baseUrl.appending("/api/v1/resources/dogs/all"))
         let (data, _) = try await urlSession.data(from: url!)
         return try JSONDecoder().decode([Fact].self, from: data)
     }

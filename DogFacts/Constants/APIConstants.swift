@@ -8,5 +8,5 @@
 import Foundation
 
 enum APIConstants {
-    static let baseUrl = "https://dog-facts-api.herokuapp.com/api/v1/resources/dogs/all"
+    static let baseUrl = "https://dog-facts-api.herokuapp.com"
 }
